@@ -1,3 +1,4 @@
+import 'package:agribox/screens/homeScreen.dart';
 import 'package:agribox/screens/splashscreen/splashcreen.dart';
 import 'package:flutter/material.dart';
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home:
-          SplashScreen(), // Change this to OnboardingScreen() to show onboarding
+          Homescreen(), // Change this to OnboardingScreen() to show onboarding
     );
   }
 }
