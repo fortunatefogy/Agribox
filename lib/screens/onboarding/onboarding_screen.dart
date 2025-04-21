@@ -1,5 +1,6 @@
-// ignore_for_file: sort_child_properties_last
+// ignore_for_file: sort_child_properties_last, use_super_parameters
 
+import 'package:agribox/screens/auth/register_screen.dart';
 import 'package:agribox/screens/onboarding/onboarding_contents.dart';
 import 'package:agribox/screens/onboarding/size_config.dart';
 import 'package:flutter/material.dart';
@@ -121,7 +122,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       ? Padding(
                           padding: const EdgeInsets.all(30),
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              // Navigate to the next screen
+                              // Navigator.pushNamed(context, '/register');
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => RegistrationScreen(),
+                                ),
+                              );
+                            },
                             child: const Text(
                               "START",
                               style: TextStyle(color: Colors.white),
